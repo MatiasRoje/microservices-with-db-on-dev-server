@@ -1,5 +1,5 @@
-mykey = "cumhurkey"
-ami = "ami-026b57f3c383c2eec"
+mykey = "development-server"
+ami = "ami-066784287e358dad1"
 region = "us-east-1"
 instance_type = "t3a.medium"  # in order to run petcilinic microservices app, use t3a.medium otherwise you can use t2.micro
 devops_server_secgr = "Development-server-secgr"

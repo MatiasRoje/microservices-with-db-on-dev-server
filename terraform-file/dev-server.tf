@@ -5,7 +5,7 @@ provider "aws" {
   region = var.region
   //  access_key = ""
   //  secret_key = ""
-  //  If you have entered your credentials in AWS CLI before, you do not need to use these arguments.
+  //  If you have entered your credentials in AWS CLI before, you do not need to use these arguments.~NOTE: Using private aws credentials for testing
 }
 
 resource "aws_launch_template" "PetclinicServerLT" {

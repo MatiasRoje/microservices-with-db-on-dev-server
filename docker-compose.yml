@@ -12,7 +12,7 @@ services:
 
   discovery-server:
     build:
-      context: spring-petclinic-discovery-server  
+      context: spring-petclinic-discovery-server
     image: spring-petclinic-discovery-server
     container_name: discovery-server
     mem_limit: 512M
@@ -75,7 +75,7 @@ services:
      - 8080:8080
 
   tracing-server:
-    image: openzipkin/zipkin    
+    image: openzipkin/zipkin
     container_name: tracing-server
     mem_limit: 512M
     environment:
@@ -124,17 +124,17 @@ services:
     mem_limit: 256M
     ports:
     - 9091:9090
-    
+
   mysql-server:
     image: mysql:5.7.8
     container_name: mysql-server
-    environment: 
+    environment:
       MYSQL_ROOT_PASSWORD: petclinic
       MYSQL_DATABASE: petclinic
     mem_limit: 256M
     ports:
     - 3306:3306
     volumes:
-    - "./conf.d:/etc/mysql/conf.d:ro"    
+    - "./conf.d:/etc/mysql/conf.d:ro"
 volumes:
   conf.d:
